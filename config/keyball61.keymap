@@ -67,7 +67,7 @@
             bindings = <&kp LA(F4)>;
         };
 
-        // ;bkps = DEL
+        // pbkps = DEL
         del {
             timeout-ms = <50>;
             key-positions = <22 23>;
