@@ -138,7 +138,7 @@
 &trans  &trans    &trans    &trans  &trans     &trans                      &trans         &trans     &trans     &trans     &trans     &trans
 &trans  &trans    &trans    &trans  &trans     &trans                      &trans         &trans     &kp UP     &trans     &trans     &trans
 &trans  &trans    &trans    &trans  &trans     &trans                      &trans         &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans
-&trans  &trans    &trans    &trans  &trans     &trans  &trans    &mo base  &trans         &trans     &trans     &trans     &trans     &trans
+&trans  &trans    &trans    &trans  &trans     &trans  &trans    &mo BASE  &trans         &trans     &trans     &trans     &trans     &trans
 &trans  &trans    &trans    &trans  &trans     &trans  &trans    &trans    &trans                                          &trans     &trans
             >;
         };
