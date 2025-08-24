@@ -10,14 +10,15 @@
 
 // task specific layers
 #define RNAV 1
+#define FPS  2
 
 // base layers which should always be accessible (i.e. num, nav, sys)
-#define BASE 2 // same as DFLT except for thumbs, used to override DFLT keys onto custom layers
-#define NUM  3 // numbers layer - numbers, symbols, function keys
-#define NAV  4 // navigation layer - arrow keys, media controls
-#define SYS  5 // system layer - toggle layer, bt controls
-#define CSR  6 // cursor layer
-#define SCR  7 // scroll layer
+#define BASE 3 // same as DFLT except for thumbs, used to override DFLT keys onto custom layers
+#define NUM  4 // numbers layer - numbers, symbols, function keys
+#define NAV  5 // navigation layer - arrow keys, media controls
+#define SYS  6 // system layer - toggle layer, bt controls
+#define CSR  7 // cursor layer
+#define SCR  8 // scroll layer
 
 &lt {
     tapping-term-ms = <240>;
@@ -140,6 +141,17 @@
 &trans  &trans    &trans    &trans  &trans     &trans                      &trans         &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans
 &trans  &trans    &trans    &trans  &trans     &trans  &trans    &mo BASE  &trans         &trans     &trans     &trans     &trans     &trans
 &trans  &trans    &trans    &trans  &trans     &trans  &trans    &trans    &trans                                          &trans     &trans
+            >;
+        };
+
+        fps {
+            label = "fps";
+            bindings = <
+&kp ESC       &kp N1     &kp N2     &kp N3      &kp N4     &kp N5                                  &kp N6      &kp N7   &kp N8      &kp N9    &kp N0         &kp GRAVE
+&kp DEL       &kp Q      &kp W      &kp E       &kp R      &kp T                                   &kp Y       &kp U    &kp I       &kp O     &kp P          &kp BSPC
+&kp TAB       &kp A      &kp S      &kp D       &kp F      &kp G                                   &kp H       &kp J    &kp K       &kp L     &lt SCR SEMI   &lt CSR ESC
+&kp LSHIFT    &kp Z      &kp X      &kp C       &kp V      &kp B       &mo NUM        &mo NAV      &kp N       &kp M    &kp COMMA   &kp DOT   &kp FSLH       &kp RSHIFT
+&mo SCR       &kp LGUI   &kp PG_UP  &kp PG_DN   &kp LALT   &kp LCTRL   &kp SPACE      &kp RET      &kp RSHFT                                  &kp RALT       &kp RCTRL
             >;
         };
 
