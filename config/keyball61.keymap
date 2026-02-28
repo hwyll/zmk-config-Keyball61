@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 
 // higher number layers take precedence / override below
@@ -247,22 +248,22 @@
         sys {
             label = "sys";
             bindings = <
-//    ┌─────┬─────┬─────┬─────┬─────┬─────┐               ┌──────────┬──────────┬──────────┬──────────┬──────────┬────────┐
-//    │     │     │     │     │     │     │               │          │          │          │          │          │        │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┤               ├──────────┼──────────┼──────────┼──────────┼──────────┼────────┤
-//    │     │ f1  │ f2  │ f3  │ f4  │     │               │ bt_sel 0 │ bt_sel 1 │ bt_sel 2 │ bt_sel 3 │ bt_sel 4 │ bt_clr │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┤               ├──────────┼──────────┼──────────┼──────────┼──────────┼────────┤
-//    │     │ f5  │ f6  │ f7  │ f8  │     │               │  to DF<  │ to RNAV  │  to FPS  │          │          │        │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┼─────┐   ┌─────┼──────────┼──────────┼──────────┼──────────┼──────────┼────────┤
-//    │     │ f9  │ f10 │ f11 │ f12 │     │     │   │     │          │          │          │          │          │        │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────────┼──────────┴──────────┴──────────┼──────────┼────────┤
-//    │     │     │     │     │     │     │     │   │     │          │                                │          │        │
-//    └─────┴─────┴─────┴─────┴─────┴─────┴─────┘   └─────┴──────────┘                                └──────────┴────────┘
-  &trans   &trans   &trans    &trans    &trans    &trans                         &trans         &trans         &trans         &trans         &trans         &trans
-  &trans   &kp F1   &kp F2    &kp F3    &kp F4    &trans                         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_CLR
-  &trans   &kp F5   &kp F6    &kp F7    &kp F8    &trans                         &to DFLT       &to RNAV       &to FPS        &trans         &trans         &trans
-  &trans   &kp F9   &kp F10   &kp F11   &kp F12   &trans   &trans       &trans   &trans         &trans         &trans         &trans         &trans         &trans
-  &trans   &trans   &trans    &trans    &trans    &trans   &trans       &trans   &trans                                                      &trans         &trans
+//    ┌─────┬─────┬─────┬─────┬─────┬─────┐               ┌───────────┬──────────┬──────────┬──────────┬──────────┬────────┐
+//    │     │     │     │     │     │     │               │           │          │          │          │          │        │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┤               ├───────────┼──────────┼──────────┼──────────┼──────────┼────────┤
+//    │     │ f1  │ f2  │ f3  │ f4  │     │               │ bt_sel 0  │ bt_sel 1 │ bt_sel 2 │ bt_sel 3 │ bt_sel 4 │ bt_clr │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┤               ├───────────┼──────────┼──────────┼──────────┼──────────┼────────┤
+//    │     │ f5  │ f6  │ f7  │ f8  │     │               │  to DF<   │ to RNAV  │  to FPS  │          │          │        │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┼─────┐   ┌─────┼───────────┼──────────┼──────────┼──────────┼──────────┼────────┤
+//    │     │ f9  │ f10 │ f11 │ f12 │     │     │   │     │ epwr_ tog │          │          │          │          │        │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼───────────┼──────────┴──────────┴──────────┼──────────┼────────┤
+//    │     │     │     │     │     │     │     │   │     │           │                                │          │        │
+//    └─────┴─────┴─────┴─────┴─────┴─────┴─────┘   └─────┴───────────┘                                └──────────┴────────┘
+  &trans   &trans   &trans    &trans    &trans    &trans                         &trans              &trans         &trans         &trans         &trans         &trans
+  &trans   &kp F1   &kp F2    &kp F3    &kp F4    &trans                         &bt BT_SEL 0        &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_CLR
+  &trans   &kp F5   &kp F6    &kp F7    &kp F8    &trans                         &to DFLT            &to RNAV       &to FPS        &trans         &trans         &trans
+  &trans   &kp F9   &kp F10   &kp F11   &kp F12   &trans   &trans       &trans   &ext_power EP_TOG   &trans         &trans         &trans         &trans         &trans
+  &trans   &trans   &trans    &trans    &trans    &trans   &trans       &trans   &trans                                                           &trans         &trans
             >;
         };
 
