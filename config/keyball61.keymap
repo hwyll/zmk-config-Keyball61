@@ -108,22 +108,22 @@
         dflt {
             label = "dflt";
             bindings = <
-//    ┌────────┬──────┬───────┬──────┬──────┬──────┐                     ┌──────┬───┬───┬───┬──────────┬────────────┐
-//    │  esc   │  1   │   2   │  3   │  4   │  5   │                     │  6   │ 7 │ 8 │ 9 │    0     │    del     │
-//    ├────────┼──────┼───────┼──────┼──────┼──────┤                     ├──────┼───┼───┼───┼──────────┼────────────┤
-//    │  tab   │  Q   │   W   │  E   │  R   │  T   │                     │  Y   │ U │ I │ O │    P     │    bspc    │
-//    ├────────┼──────┼───────┼──────┼──────┼──────┤                     ├──────┼───┼───┼───┼──────────┼────────────┤
-//    │  lalt  │  A   │   S   │  D   │  F   │  G   │                     │  H   │ J │ K │ L │ lt SCR ; │ lt CSR esc │
-//    ├────────┼──────┼───────┼──────┼──────┼──────┼────────┐   ┌────────┼──────┼───┼───┼───┼──────────┼────────────┤
-//    │  lsft  │  Z   │   X   │  C   │  V   │  B   │ mo NUM │   │ mo NAV │  N   │ M │ , │ . │    /     │    rsft    │
-//    ├────────┼──────┼───────┼──────┼──────┼──────┼────────┤   ├────────┼──────┼───┴───┴───┼──────────┼────────────┤
-//    │ mo SCR │ mclk │ RpCLK │ lclk │ lctl │ lgui │  spc   │   │  ent   │ rsft │           │   ralt   │    rctl    │
-//    └────────┴──────┴───────┴──────┴──────┴──────┴────────┘   └────────┴──────┘           └──────────┴────────────┘
-  &kp ESC      &kp N1      &kp N2       &kp N3      &kp N4      &kp N5                               &kp N6      &kp N7   &kp N8      &kp N9    &kp N0         &kp DEL
-  &kp TAB      &kp Q       &kp W        &kp E       &kp R       &kp T                                &kp Y       &kp U    &kp I       &kp O     &kp P          &kp BSPC
-  &kp LALT     &kp A       &kp S        &kp D       &kp F       &kp G                                &kp H       &kp J    &kp K       &kp L     &lt SCR SEMI   &lt CSR ESC
-  &kp LSHIFT   &kp Z       &kp X        &kp C       &kp V       &kp B      &mo NUM         &mo NAV   &kp N       &kp M    &kp COMMA   &kp DOT   &kp FSLH       &kp RSHIFT
-  &mo SCR      &mkp MCLK   &mkp RpCLK   &mkp LCLK   &kp LCTRL   &kp LGUI   &kp SPACE       &kp RET   &kp RSHFT                                  &kp RALT       &kp RCTRL
+//    ┌──────┬─────┬──────┬──────┬──────┬──────┐                     ┌──────┬───┬───┬───┬──────────┬────────────┐
+//    │ esc  │  1  │  2   │  3   │  4   │  5   │                     │  6   │ 7 │ 8 │ 9 │    0     │    del     │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┤                     ├──────┼───┼───┼───┼──────────┼────────────┤
+//    │ tab  │  Q  │  W   │  E   │  R   │  T   │                     │  Y   │ U │ I │ O │    P     │    bspc    │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┤                     ├──────┼───┼───┼───┼──────────┼────────────┤
+//    │ lalt │  A  │  S   │  D   │  F   │  G   │                     │  H   │ J │ K │ L │ lt SCR ; │ lt CSR esc │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┼────────┐   ┌────────┼──────┼───┼───┼───┼──────────┼────────────┤
+//    │ lsft │  Z  │  X   │  C   │  V   │  B   │ mo NUM │   │ mo NAV │  N   │ M │ , │ . │    /     │    rsft    │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┼────────┤   ├────────┼──────┼───┴───┴───┼──────────┼────────────┤
+//    │ home │ end │ pgup │ pgdn │ lctl │ lgui │  spc   │   │  ent   │ rsft │           │   ralt   │    rctl    │
+//    └──────┴─────┴──────┴──────┴──────┴──────┴────────┘   └────────┴──────┘           └──────────┴────────────┘
+  &kp ESC      &kp N1    &kp N2      &kp N3      &kp N4      &kp N5                               &kp N6      &kp N7   &kp N8      &kp N9    &kp N0         &kp DEL
+  &kp TAB      &kp Q     &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U    &kp I       &kp O     &kp P          &kp BSPC
+  &kp LALT     &kp A     &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J    &kp K       &kp L     &lt SCR SEMI   &lt CSR ESC
+  &kp LSHIFT   &kp Z     &kp X       &kp C       &kp V       &kp B      &mo NUM         &mo NAV   &kp N       &kp M    &kp COMMA   &kp DOT   &kp FSLH       &kp RSHIFT
+  &kp HOME     &kp END   &kp PG_UP   &kp PG_DN   &kp LCTRL   &kp LGUI   &kp SPACE       &kp RET   &kp RSHFT                                  &kp RALT       &kp RCTRL
             >;
         };
 
@@ -181,22 +181,22 @@
         base {
             label = "base";
             bindings = <
-//    ┌────────┬──────┬──────┬──────┬──────┬──────┐               ┌──────┬───┬───┬───┬──────────┬────────────┐
-//    │  esc   │  1   │  2   │  3   │  4   │  5   │               │  6   │ 7 │ 8 │ 9 │    0     │    del     │
-//    ├────────┼──────┼──────┼──────┼──────┼──────┤               ├──────┼───┼───┼───┼──────────┼────────────┤
-//    │  tab   │  Q   │  W   │  E   │  R   │  T   │               │  Y   │ U │ I │ O │    P     │    bspc    │
-//    ├────────┼──────┼──────┼──────┼──────┼──────┤               ├──────┼───┼───┼───┼──────────┼────────────┤
-//    │  lalt  │  A   │  S   │  D   │  F   │  G   │               │  H   │ J │ K │ L │ lt SCR ; │ lt CSR esc │
-//    ├────────┼──────┼──────┼──────┼──────┼──────┼─────┐   ┌─────┼──────┼───┼───┼───┼──────────┼────────────┤
-//    │  lsft  │  Z   │  X   │  C   │  V   │  B   │     │   │     │  N   │ M │ , │ . │    /     │    rsft    │
-//    ├────────┼──────┼──────┼──────┼──────┼──────┼─────┤   ├─────┼──────┼───┴───┴───┼──────────┼────────────┤
-//    │ mo SCR │ mclk │ rclk │ lclk │ lctl │ lgui │ spc │   │ ent │ rsft │           │   ralt   │    rctl    │
-//    └────────┴──────┴──────┴──────┴──────┴──────┴─────┘   └─────┴──────┘           └──────────┴────────────┘
-  &kp ESC      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                               &kp N6      &kp N7   &kp N8      &kp N9    &kp N0         &kp DEL
-  &kp TAB      &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U    &kp I       &kp O     &kp P          &kp BSPC
-  &kp LALT     &kp A       &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J    &kp K       &kp L     &lt SCR SEMI   &lt CSR ESC
-  &kp LSHIFT   &kp Z       &kp X       &kp C       &kp V       &kp B      &trans          &trans    &kp N       &kp M    &kp COMMA   &kp DOT   &kp FSLH       &kp RSHIFT
-  &mo SCR      &mkp MCLK   &mkp RCLK   &mkp LCLK   &kp LCTRL   &kp LGUI   &kp SPACE       &kp RET   &kp RSHFT                                  &kp RALT       &kp RCTRL
+//    ┌──────┬─────┬──────┬──────┬──────┬──────┐               ┌──────┬───┬───┬───┬──────────┬────────────┐
+//    │ esc  │  1  │  2   │  3   │  4   │  5   │               │  6   │ 7 │ 8 │ 9 │    0     │    del     │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┤               ├──────┼───┼───┼───┼──────────┼────────────┤
+//    │ tab  │  Q  │  W   │  E   │  R   │  T   │               │  Y   │ U │ I │ O │    P     │    bspc    │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┤               ├──────┼───┼───┼───┼──────────┼────────────┤
+//    │ lalt │  A  │  S   │  D   │  F   │  G   │               │  H   │ J │ K │ L │ lt SCR ; │ lt CSR esc │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┼─────┐   ┌─────┼──────┼───┼───┼───┼──────────┼────────────┤
+//    │ lsft │  Z  │  X   │  C   │  V   │  B   │     │   │     │  N   │ M │ , │ . │    /     │    rsft    │
+//    ├──────┼─────┼──────┼──────┼──────┼──────┼─────┤   ├─────┼──────┼───┴───┴───┼──────────┼────────────┤
+//    │ home │ end │ pgup │ pgdn │ lctl │ lgui │ spc │   │ ent │ rsft │           │   ralt   │    rctl    │
+//    └──────┴─────┴──────┴──────┴──────┴──────┴─────┘   └─────┴──────┘           └──────────┴────────────┘
+  &kp ESC      &kp N1    &kp N2      &kp N3      &kp N4      &kp N5                               &kp N6      &kp N7   &kp N8      &kp N9    &kp N0         &kp DEL
+  &kp TAB      &kp Q     &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U    &kp I       &kp O     &kp P          &kp BSPC
+  &kp LALT     &kp A     &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J    &kp K       &kp L     &lt SCR SEMI   &lt CSR ESC
+  &kp LSHIFT   &kp Z     &kp X       &kp C       &kp V       &kp B      &trans          &trans    &kp N       &kp M    &kp COMMA   &kp DOT   &kp FSLH       &kp RSHIFT
+  &kp HOME     &kp END   &kp PG_UP   &kp PG_DN   &kp LCTRL   &kp LGUI   &kp SPACE       &kp RET   &kp RSHFT                                  &kp RALT       &kp RCTRL
             >;
         };
 
